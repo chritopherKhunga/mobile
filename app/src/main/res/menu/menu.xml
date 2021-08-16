@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_add"
+        android:title="add"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="search"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/ic_notification"
+        android:title="notification"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/menuu"
+        android:title=""
+        android:icon="@drawable/ic_menu"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/setting"
+                android:title="setting"
+                app:showAsAction="always"
+
+                android:color="@color/black"/>
+            <item
+                android:id="@+id/exit"
+                android:title="exit"
+                app:showAsAction="always"
+            />
+        </menu>
+    </item>
+
+</menu>

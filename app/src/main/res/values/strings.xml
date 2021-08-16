@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">farmersApp</string>
+    <string name="confirmpassword">confirmPassword</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="registr">Registr</string>
+    <string name="pass">Name</string>
+    <string name="email">email</string>
+    <string name="password2">password</string>
+    <string name="confirmpassoword">ConfirmPassoword</string>
+    <string name="login">login</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_your_password">enter your password</string>
+    <string name="Login">Login</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="lognbtn">Button</string>
+    <string name="login2">Login</string>
+    <string name="dont_have_account">Dont_have_account?</string>
+    <string name="register2">Register</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome">Welcome</string>
+    <string name="start">START</string>
+    <string name="buy_sell_and_advertise_your_farm_products">Buy, sell and advertise your farm products</string>
+    <string name="home">HOME</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="successfully_registered">successfully registered</string>
+    <string name="exit">exit</string>
+    <string name="notification">notification</string>
+    <string name="setting">setting</string>
+
+
+</resources>
