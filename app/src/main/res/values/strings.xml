@@ -29,6 +29,8 @@
     <string name="exit">exit</string>
     <string name="notification">notification</string>
     <string name="setting">setting</string>
+    <string name="appload_image">appload image</string>
+    <string name="select_image">select image</string>
 
 
 </resources>

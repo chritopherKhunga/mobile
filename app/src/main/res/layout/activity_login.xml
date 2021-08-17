@@ -34,8 +34,7 @@
         android:layout_marginBottom="8dp"
         android:autofillHints=""
         android:background="@drawable/inp_bg"
-        android:drawableStart="@drawable/ic_baseline_email"
-        android:drawableLeft="@drawable/ic_baseline_email"
+        android:drawableLeft="@drawable/ic_email"
         android:ems="10"
         android:hint="@string/enter_your_email"
         android:inputType="textEmailAddress"
@@ -57,8 +56,7 @@
         android:layout_marginBottom="32dp"
         android:autofillHints=""
         android:background="@drawable/inp_bg"
-        android:drawableStart="@drawable/ic_baseline_security_24"
-        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawableLeft="@drawable/ic_security"
         android:ems="10"
         android:hint="@string/enter_your_password"
         android:inputType="textPassword"
@@ -73,7 +71,7 @@
         app:layout_constraintVertical_bias="0.13999999" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/signin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="290dp"
@@ -116,7 +114,7 @@
         app:layout_constraintVertical_bias="0.264" />
 
     <TextView
-        android:id="@+id/signUp"
+        android:id="@+id/sign_up"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"

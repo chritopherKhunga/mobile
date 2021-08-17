@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
@@ -22,6 +24,8 @@ public class services extends AppCompatActivity {
     private Toolbar toolbar;
     TabLayout tabLayout;
     ViewPager2 pager2;
+    Menu menu;
+
     FragmentAdapter adapter;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -31,6 +35,7 @@ public class services extends AppCompatActivity {
         setContentView(R.layout.activity_services);
         toolbar =findViewById(R.id.bar);
         setSupportActionBar(toolbar);
+        //menu = findViewById(R.id.add);
 
         tabLayout = findViewById(R.id.tbs);
         pager2 = findViewById(R.id.viewpage);
@@ -72,6 +77,20 @@ public class services extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater  inflater =getMenuInflater();
         inflater.inflate(R.menu.menu,menu);
+        return true;
+    }
+
+    @SuppressLint("NonConstantResourceId")
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.add:
+                startActivity(new Intent(this, image.class));
+                break;
+            case R.id.search:
+                Toast.makeText(this, "Searc icon", Toast.LENGTH_SHORT).show();
+                break;
+        }
         return true;
     }
 }

@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "502630869020",
-    "project_id": "farmersapp-f6df7",
-    "storage_bucket": "farmersapp-f6df7.appspot.com"
+    "project_number": "221003458858",
+    "project_id": "farmersapp-f0976",
+    "storage_bucket": "farmersapp-f0976.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:502630869020:android:cd170a100b504bf23e97d9",
+        "mobilesdk_app_id": "1:221003458858:android:d7024902a0972e79911653",
         "android_client_info": {
           "package_name": "com.example.farmersapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "502630869020-mbk8tavfivdbe305uu7vdm5astva3iqo.apps.googleusercontent.com",
+          "client_id": "221003458858-jfpdsk678375jkfhm8mbfqcvlcof55ie.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBdS9oBUFl7mQh24iyCnI_mNSIWifnM1YQ"
+          "current_key": "AIzaSyCE75DUR_bI4ODyNs_ZN7rFog9fIcg3mhQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "502630869020-mbk8tavfivdbe305uu7vdm5astva3iqo.apps.googleusercontent.com",
+              "client_id": "221003458858-jfpdsk678375jkfhm8mbfqcvlcof55ie.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

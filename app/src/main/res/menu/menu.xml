@@ -18,25 +18,15 @@
         android:title="notification"
         app:showAsAction="always"/>
 
-
     <item
         android:id="@+id/menuu"
-        android:title=""
+        android:title="title"
         android:icon="@drawable/ic_menu"
         app:showAsAction="always">
         <menu>
-            <item
-                android:id="@+id/setting"
-                android:title="setting"
-                app:showAsAction="always"
-
-                android:color="@color/black"/>
-            <item
-                android:id="@+id/exit"
-                android:title="exit"
-                app:showAsAction="always"
-            />
+            <item android:visible="true" android:title="menu" ></item>
         </menu>
+
     </item>
 
 </menu>

@@ -18,18 +18,16 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
+        textView = (TextView) findViewById(R.id.sign_up);
+        button = findViewById(R.id.lognbtn);
 
-        button =(Button) findViewById(R.id.lognbtn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                log();
+
+                btn();
             }
         });
-
-
-        textView = (TextView) findViewById(R.id.signUp);
-
 
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,11 +36,12 @@ public class login extends AppCompatActivity {
             }
         });
     }
-    public void log()
-    {
+
+    private void btn() {
         Intent intent = new Intent(this,services.class);
         startActivity(intent);
     }
+
     public  void sign()
     {
         Intent intent = new Intent(this,signUp.class);
