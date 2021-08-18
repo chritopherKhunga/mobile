@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="New items for this month"
+        android:text="the itemes that are not available but will be available in due course will appear here"
         android:textStyle="bold"
         android:gravity="top"/>
 
