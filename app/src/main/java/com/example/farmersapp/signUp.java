@@ -98,7 +98,8 @@ public class signUp extends AppCompatActivity {
                     database.getReference().child("users").child(id).setValue(userModel);
 
                     Toast.makeText(signUp.this, "Registration is successful", Toast.LENGTH_SHORT).show();
-                } else {
+                }
+                else {
                     Toast.makeText(signUp.this, "error"+task.getException(), Toast.LENGTH_SHORT).show();
                 }
 
