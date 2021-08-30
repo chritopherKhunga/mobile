@@ -9,15 +9,14 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+
     private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-        button =(Button) findViewById(R.id.btn);
+        button = (Button) findViewById(R.id.btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-        public void srt()
-        {
-            Intent intent = new Intent (this, login.class);
-            startActivity(intent);
-        }
+
+    public void srt() {
+        Intent intent = new Intent(this, splash.class);
+        startActivity(intent);
+    }
 
 }

@@ -33,7 +33,7 @@ public class services extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_services);
-        toolbar =findViewById(R.id.bar);
+        toolbar = findViewById(R.id.bar);
         setSupportActionBar(toolbar);
         //menu = findViewById(R.id.add);
 
@@ -75,15 +75,15 @@ public class services extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater  inflater =getMenuInflater();
-        inflater.inflate(R.menu.menu,menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
         return true;
     }
 
     @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.add:
                 startActivity(new Intent(this, image.class));
                 break;

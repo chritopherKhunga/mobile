@@ -17,7 +17,6 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
         textView = (TextView) findViewById(R.id.sign_up);
         button = findViewById(R.id.lognbtn);
 
@@ -38,13 +37,12 @@ public class login extends AppCompatActivity {
     }
 
     private void btn() {
-        Intent intent = new Intent(this,services.class);
+        Intent intent = new Intent(this, services.class);
         startActivity(intent);
     }
 
-    public  void sign()
-    {
-        Intent intent = new Intent(this,signUp.class);
+    public void sign() {
+        Intent intent = new Intent(this, signUp.class);
         startActivity(intent);
     }
 
