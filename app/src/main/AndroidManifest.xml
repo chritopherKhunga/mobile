@@ -15,8 +15,7 @@
         <activity android:name=".services" />
         <activity android:name=".login" />
         <activity android:name=".signUp" />
-        <activity android:name=".MainActivity"/>
-            <activity android:name=".splash">
+        <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

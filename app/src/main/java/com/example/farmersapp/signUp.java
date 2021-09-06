@@ -33,7 +33,7 @@ public class signUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        database =FirebaseDatabase.getInstance();
+        database = FirebaseDatabase.getInstance();
         auth = FirebaseAuth.getInstance();
 
 
@@ -52,6 +52,7 @@ public class signUp extends AppCompatActivity {
             }
         });
     }
+
 
 
     private void createUser() {
@@ -93,22 +94,22 @@ public class signUp extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-                    UserModel userModel = new UserModel(userName,userEmail,userPassword,userConfirmPass);
+                    UserModel userModel = new UserModel(userName, userEmail, userPassword, userConfirmPass);
                     String id = task.getResult().getUser().getUid();
                     database.getReference().child("users").child(id).setValue(userModel);
 
                     Toast.makeText(signUp.this, "Registration is successful", Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    Toast.makeText(signUp.this, "error"+task.getException(), Toast.LENGTH_SHORT).show();
+
+                    Intent intent = new Intent(signUp.getContext(), login.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(signUp.this, "error" + task.getException(), Toast.LENGTH_SHORT).show();
                 }
 
 
             }
         });
-        {
 
-        }
     }
 
 }

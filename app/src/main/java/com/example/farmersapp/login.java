@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class login extends AppCompatActivity {
-    private TextView textView;
+
     private Button button;
 
     @Override
@@ -17,7 +17,7 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        textView = (TextView) findViewById(R.id.sign_up);
+
         button = findViewById(R.id.lognbtn);
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -28,21 +28,19 @@ public class login extends AppCompatActivity {
             }
         });
 
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sign();
-            }
-        });
+    }
+
+    int counter;
+
+    @Override
+    public void onBackPressed() {
+        counter++;
+        if (counter == 2)
+            super.onBackPressed();
     }
 
     private void btn() {
         Intent intent = new Intent(this, services.class);
-        startActivity(intent);
-    }
-
-    public void sign() {
-        Intent intent = new Intent(this, signUp.class);
         startActivity(intent);
     }
 
